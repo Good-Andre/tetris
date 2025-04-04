@@ -501,14 +501,10 @@ class Piece {
 
             // get the new position
             newPosition = <int>[
-              // position[1] + rowLength + 1,
-              // position[1] - 1,
-              // position[1] + rowLength,
-              // position[1],
-              position[1] - rowLength + 1,
-              position[1] + 1,
-              position[1],
+              position[1] + rowLength + 1,
+              position[1] - 1,
               position[1] + rowLength,
+              position[1],
             ];
             // check this new position is valid move before assigning it to the real position
             if (piecePositionIsValid(newPosition)) {
@@ -530,14 +526,10 @@ class Piece {
 
             // get the new position
             newPosition = <int>[
-              // position[1],
-              // position[1] + 1,
-              // position[1] - rowLength + 1,
-              // position[1] + rowLength,
-              position[1] - 1,
-              position[1] - rowLength,
               position[1],
-              position[1] + rowLength + 1,
+              position[1] + 1,
+              position[1] - rowLength + 1,
+              position[1] + rowLength,
             ];
             // check this new position is valid move before assigning it to the real position
             if (piecePositionIsValid(newPosition)) {
@@ -558,14 +550,10 @@ class Piece {
 
             // get the new position
             newPosition = <int>[
-              // position[1] + rowLength,
-              // position[1] - 2,
-              // position[1] + rowLength - 1,
-              // position[1] - 1,
+              position[1] + rowLength,
+              position[1] - 2,
               position[1] + rowLength - 1,
               position[1] - 1,
-              position[1],
-              position[1] - rowLength,
             ];
             // check this new position is valid move before assigning it to the real position
             if (piecePositionIsValid(newPosition)) {
@@ -587,14 +575,10 @@ class Piece {
 
             // get the new position
             newPosition = <int>[
-              // position[1] + 1,
-              // position[1] + 2,
-              // position[1] - rowLength + 2,
-              // position[1] + rowLength + 1,
-              position[1] + rowLength + 1,
-              position[1] + 2,
               position[1] + 1,
-              position[1] - rowLength - 1,
+              position[1] + 2,
+              position[1] - rowLength + 2,
+              position[1] + rowLength + 1,
             ];
             // check this new position is valid move before assigning it to the real position
             if (piecePositionIsValid(newPosition)) {
